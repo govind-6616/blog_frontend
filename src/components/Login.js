@@ -28,7 +28,7 @@ const Login = () => {
     const sendEvent = async (e) => {
         e.preventDefault();
         const { email, password } = name;
-        const res = await fetch('/login', {
+        const res = await fetch('https://backend-blog-io7y.onrender.com/login', {
             method: "POST",
             headers: {
                 "content-type": "application/json"
