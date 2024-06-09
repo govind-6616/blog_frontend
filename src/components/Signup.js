@@ -23,7 +23,7 @@ const Signup = () => {
     const PostData = async (e) => {
         e.preventDefault();
         const { author, email, password, city, mobile, jobprofile } = nam;
-        const res = await fetch('/register', {
+        const res = await fetch('https://backend-blog-io7y.onrender.com/register', {
             method: "POST",
             headers: {
                 "content-type": "application/json"
