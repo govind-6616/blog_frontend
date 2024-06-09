@@ -27,7 +27,7 @@ const About = () => {
 
     const callAbout = async () => {
         try {
-            const res = await fetch(`/About/${_id}`, {
+            const res = await fetch(`https://backend-blog-io7y.onrender.com/About/${_id}`, {
                 method: "GET",
                 headers: {
                     accept: "application/json",
@@ -45,7 +45,7 @@ const About = () => {
             }
         }
         catch (err) {
-            history.push('/Login');
+            history.push('https://backend-blog-io7y.onrender.com/Login');
             console.log(err);
         }
     }
@@ -75,7 +75,7 @@ const About = () => {
 
     const followBloger = async () => {
         try {
-            const res = await fetch(`/follow/${_id}`, {
+            const res = await fetch(`https://backend-blog-io7y.onrender.com/follow/${_id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",
