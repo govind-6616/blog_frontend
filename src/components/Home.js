@@ -21,7 +21,7 @@ const Home = () => {
 
     const getBlog = async () => {
         try {
-            const res = await fetch(`/getData`, {
+            const res = await fetch(`https://backend-blog-io7y.onrender.com/getData`, {
                 method: "GET",
                 headers: {
                     accept: "application/json",
@@ -38,7 +38,7 @@ const Home = () => {
     }
     const getCategory = async () => {
         try {
-            const res = await fetch(`/${category}`, {
+            const res = await fetch(`https://backend-blog-io7y.onrender.com/${category}`, {
                 method: "GET",
                 headers: {
                     accept: "application/json",
