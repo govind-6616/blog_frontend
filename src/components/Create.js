@@ -7,7 +7,7 @@ const Contact = () => {
 useEffect(()=>{
     const token=localStorage.getItem('token');
     if(!token){
-history.push('/login');
+history.push('https://backend-blog-io7y.onrender.com/login');
     }
 },[]);
 useEffect(()=>{
@@ -30,7 +30,7 @@ const setDate=()=>{
 
     const callDetail = async () => {
         try {
-            const res = await fetch('/getUser', {
+            const res = await fetch('https://backend-blog-io7y.onrender.com/getUser', {
                 method: "GET",
                 headers: {
                     accept: "application/json",
