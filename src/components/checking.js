@@ -22,7 +22,7 @@ const Check = () => {
 
     const getData = async () => {
         try {
-            const res = await axios.get(`/blogDetail/${_id}`);
+            const res = await axios.get(`https://backend-blog-io7y.onrender.com/blogDetail/${_id}`);
             if (res.status === 200) {
                 // const data = await res.json();
                 setDetail(res.data);
@@ -38,7 +38,7 @@ const Check = () => {
     const updateBlog = async () => {
         try {
             // const { heading, category, article, url, author } = detail;
-            const res = await axios.patch(`/updateBlog/${_id}`, detail);
+            const res = await axios.patch(`https://backend-blog-io7y.onrender.com/updateBlog/${_id}`, detail);
 
             if (res.status === 200) {
                 alert("Blog Updated successfully");
