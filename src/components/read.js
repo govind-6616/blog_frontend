@@ -17,7 +17,7 @@ const Read = () => {
 
     const getBlog = async () => {
         try {
-            const res = await fetch(`/getData/${_id}`, {
+            const res = await fetch(`https://backend-blog-io7y.onrender.com/getData/${_id}`, {
                 method: "GET",
                 headers: {
                     accept: "application/json",
