@@ -16,7 +16,7 @@ const Profile = () => {
 
     const deleteBlog = async (id) => {
         try {
-            const res = await fetch(`/delete/${id}`, {
+            const res = await fetch(`https://backend-blog-io7y.onrender.com/delete/${id}`, {
                 method: "DELETE",
                 headers: {
                     accept: "application/json",
@@ -35,7 +35,7 @@ const Profile = () => {
 
     const callAbout = async () => {
         try {
-            const res = await fetch('/about', {
+            const res = await fetch('https://backend-blog-io7y.onrender.com/about', {
                 method: "GET",
                 headers: {
                     accept: "application/json",
@@ -59,7 +59,7 @@ const Profile = () => {
     }
     const callFollowers = async () => {
         try {
-            const res = await fetch('/aboutFollow', {
+            const res = await fetch('https://backend-blog-io7y.onrender.com/aboutFollow', {
                 method: "GET",
                 headers: {
                     accept: "application/json",
